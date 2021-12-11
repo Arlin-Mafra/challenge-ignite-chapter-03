@@ -23,8 +23,8 @@ export function CardAnimation({ children, ...rest }: CardAnimationProps) {
     return {
       opacity: interpolate(
         cardOpacity.value,
-        [0, 100],
-        [1, 0],
+        [75, 0],
+        [0, 1],
         Extrapolate.CLAMP
       ),
       transform: [
