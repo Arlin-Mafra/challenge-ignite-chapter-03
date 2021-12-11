@@ -36,7 +36,6 @@ export function Repository() {
   const { findRepositoryById } = useRepositories();
   const repository = findRepositoryById(repositoryId);
 
-  console.log(repository);
   function handleIssueNavigation(issueUrl: string) {
     Linking.openURL(issueUrl);
   }
